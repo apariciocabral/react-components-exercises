@@ -2,6 +2,7 @@ import './App.css';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
 
@@ -39,7 +40,9 @@ const App: React.FC = () => {
                 tipo string, e retorna um número dizendo a quantidade de
                 caracteres contidas nessa string.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q4StringLength value="Quantidade de caracteres na frase" />
+            </div>
 
             <h2 className="fs-6">
                 5. Crie um componente que recebe uma prop &quot;value&quot;, do
