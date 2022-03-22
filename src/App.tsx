@@ -4,7 +4,6 @@ import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
-import Q6LastChar from './components/Q6LastChar';
 
 const App: React.FC = () => {
     return (
@@ -56,9 +55,7 @@ const App: React.FC = () => {
                 6. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna a última letra dessa string.
             </h2>
-            <div className="card p-3 mb-4">
-                <Q6LastChar value="Teste" />
-            </div>
+            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
 
             <h2 className="fs-6">
                 7. Crie um componente que recebe duas props do tipo string e
