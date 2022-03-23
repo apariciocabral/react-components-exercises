@@ -1,5 +1,6 @@
 import './App.css';
 import Q1String from './components/Q1String';
+import Q21Elevated from './components/Q21Elevated';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
@@ -197,7 +198,9 @@ const App: React.FC = () => {
                 21. Crie um componente que recebe dois números e retorna o
                 primeiro elevado pelo segundo
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q21Elevated value={2} value1={3} />
+            </div>
 
             <h2 className="fs-6">
                 22. Crie um componente que recebe dois números e retorna o maior
