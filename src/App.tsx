@@ -5,7 +5,7 @@ import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
-import Q14OnlyFirstUppercase from './components/Q6LastChar copy';
+import Q14OnlyFirstUppercase from './components/Q14OnlyFirstUppercase';
 
 const App: React.FC = () => {
     return (
