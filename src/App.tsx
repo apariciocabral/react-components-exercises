@@ -5,6 +5,7 @@ import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
+import Q9StringComma from './components/Q9StringComma';
 
 const App: React.FC = () => {
     return (
@@ -95,7 +96,9 @@ const App: React.FC = () => {
                 <br /> Prop 2: 5.
                 <br /> Retorno: Oi, Oi, Oi, Oi, Oi
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q9StringComma vezes={5} />
+            </div>
 
             <h2 className="fs-6">
                 10. Crie um componente que recebe duas strings e retorna a que
