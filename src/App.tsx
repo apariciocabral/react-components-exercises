@@ -1,4 +1,5 @@
 import './App.css';
+import Q10BiggerString from './components/Q10BiggerString';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
@@ -101,7 +102,9 @@ const App: React.FC = () => {
                 10. Crie um componente que recebe duas strings e retorna a que
                 tiver mais caracteres.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q10BiggerString value="Diego Cabral" value1="Aparicio" />
+            </div>
 
             <h2 className="fs-6">
                 11. Crie um componente que recebe duas strings e retorna
