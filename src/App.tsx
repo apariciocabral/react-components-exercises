@@ -1,11 +1,14 @@
 import './App.css';
 import Q15FirstUppercase from './components/Q15FirstUppercase';
 import Q1String from './components/Q1String';
+import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
+import Q16Sum from './components/Q16Sum';
+import Q17Subtraction from './components/Q17Subtraction';
 
 const App: React.FC = () => {
     return (
@@ -169,19 +172,25 @@ const App: React.FC = () => {
                 16. Crie um componente que recebe dois números e retorna o valor
                 da soma entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q16Sum value={12} value1={23} />
+            </div>
 
             <h2 className="fs-6">
                 17. Crie um componente que recebe dois números e retorna o valor
                 da subtração entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q17Subtraction value={25} value1={10} />
+            </div>
 
             <h2 className="fs-6">
                 18. Crie um componente que recebe dois números e retorna o valor
                 da multiplicação entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q18Multiplication value={15} value1={5} />
+            </div>
 
             <h2 className="fs-6">
                 19. Crie um componente que recebe dois números e retorna o valor
@@ -194,7 +203,9 @@ const App: React.FC = () => {
                 20. Crie um componente que recebe um número e retorna o mesmo
                 elevado a 2
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q20ElevatedByTwo value={5} />
+            </div>
 
             <h2 className="fs-6">
                 21. Crie um componente que recebe dois números e retorna o
