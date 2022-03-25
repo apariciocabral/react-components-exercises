@@ -11,6 +11,7 @@ import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q28OddEven from './components/Q28OddEven';
+import Q36Button from './components/Q36Button';
 
 const App: React.FC = () => {
     return (
@@ -316,7 +317,9 @@ const App: React.FC = () => {
                 botão com o texto de <b>label</b> e a cor de fundo de{' '}
                 <b>color</b>
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q36Button label="Texto" color="yellow" />
+            </div>
 
             <h2 className="fs-6">
                 37. Crie um componente que tem um input de texto, um botão e uma
