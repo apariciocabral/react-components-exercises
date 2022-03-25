@@ -1,16 +1,16 @@
 import './App.css';
-import Q15FirstUppercase from './components/Q15FirstUppercase';
 import Q1String from './components/Q1String';
-import Q28OddEven from './components/Q28OddEven';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
+import Q15FirstUppercase from './components/Q15FirstUppercase';
 import Q16Sum from './components/Q16Sum';
 import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
+import Q28OddEven from './components/Q28OddEven';
 
 const App: React.FC = () => {
     return (
