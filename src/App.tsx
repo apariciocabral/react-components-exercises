@@ -85,7 +85,7 @@ const App: React.FC = () => {
                 <br /> Retorno: OiOiOiOiOi
             </h2>
             <div className="card p-3 mb-4">
-                <Q8RepeatString prop1="Olá" prop2={5} />
+                <Q8RepeatString value="Olá" value1={5} />
             </div>
 
             <h2 className="fs-6">
