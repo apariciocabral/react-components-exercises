@@ -206,6 +206,7 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q22BiggerNumber value={100} value1={20} />
+                <Q22BiggerNumber value={100} value1={200} />
             </div>
 
             <h2 className="fs-6">
