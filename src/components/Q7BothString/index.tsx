@@ -1,10 +1,10 @@
 interface IQ7BothStringProps {
-    prop1: string;
-    prop2: string;
+    value: string;
+    value1: string;
 }
 
-const Q7BothString: React.FC<IQ7BothStringProps> = ({ prop1, prop2 }) => (
-    <span>{`${prop1} ${prop2}`}</span>
+const Q7BothString: React.FC<IQ7BothStringProps> = ({ value, value1 }) => (
+    <span>{`${value} ${value1}`}</span>
 );
 
 export default Q7BothString;

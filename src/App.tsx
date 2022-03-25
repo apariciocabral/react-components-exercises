@@ -74,7 +74,7 @@ const App: React.FC = () => {
                 Retorno: Oi tudo bem?
             </h2>
             <div className="card p-3 mb-4">
-                <Q7BothString prop1="Eu acho " prop2="que é assim!" />
+                <Q7BothString value="Eu acho" value1="que é assim!" />
             </div>
 
             <h2 className="fs-6">
