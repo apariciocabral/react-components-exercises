@@ -188,6 +188,12 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q19Division value={10} value1={2} />
+                <Q19Division value={10} value1={0} />
+                <Q19Division value={0} value1={2} />
+                <Q19Division value={-10} value1={-2} />
+                <Q19Division value={10} value1={-2} />
+                <Q19Division value={-10} value1={2} />
+                <Q19Division value={123.56} value1={4.67} />
             </div>
 
             <h2 className="fs-6">
