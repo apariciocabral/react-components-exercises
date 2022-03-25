@@ -9,6 +9,8 @@ import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
 import Q16Sum from './components/Q16Sum';
 import Q17Subtraction from './components/Q17Subtraction';
+import Q18Multiplication from './components/Q18Multiplication';
+import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 
 const App: React.FC = () => {
     return (
