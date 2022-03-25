@@ -1,4 +1,12 @@
 import './App.css';
+<<<<<<< HEAD
+<<<<<<< HEAD
+import Q16Sum from './components/Q16Sum';
+=======
+import Q10BiggerString from './components/Q10BiggerString';
+>>>>>>> master
+=======
+>>>>>>> questao_16
 import Q1String from './components/Q1String';
 import Q21Elevated from './components/Q21Elevated';
 import Q2Uppercase from './components/Q2Uppercase';
