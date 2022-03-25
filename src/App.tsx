@@ -11,6 +11,7 @@ import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q28OddEven from './components/Q28OddEven';
+import Q11Intersection from './components/Q11Intersection';
 
 const App: React.FC = () => {
     return (
@@ -119,7 +120,10 @@ const App: React.FC = () => {
                 <br /> Prop 2: mente
                 <br /> Retorno: Sim
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q11Intersection value="Ausente" value1="ente" />
+                <Q11Intersection value="Ausente" value1="anta" />
+            </div>
 
             <h2 className="fs-6">
                 12. Crie um componente que recebe uma string e um número.
