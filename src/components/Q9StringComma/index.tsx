@@ -1,15 +1,16 @@
 interface IQ9StringCommaProps {
-    value: number;
+    value: string;
+    amount: number;
 }
 
-const Q9StringComma: React.FC<IQ9StringCommaProps> = ({ value }) => {
-    const frase = [];
+const Q9StringComma: React.FC<IQ9StringCommaProps> = ({ value, amount }) => {
+    const phrase = [];
 
-    for (let contador = 1; contador <= value; contador += 1) {
-        frase.push('oi');
+    for (let i = 1; i <= amount; i += 1) {
+        phrase.push(value);
     }
 
-    return <p>{frase.join(', ')}</p>;
+    return <p>{phrase.join(', ')}</p>;
 };
 
 export default Q9StringComma;
