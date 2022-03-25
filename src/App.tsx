@@ -11,6 +11,7 @@ import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q28OddEven from './components/Q28OddEven';
+import Q27Factorial from './components/Q27Factorial';
 
 const App: React.FC = () => {
     return (
@@ -251,7 +252,9 @@ const App: React.FC = () => {
                 27. Crie um componente que recebe um número X e retorna o seu
                 fatorial
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q27Factorial value={5} />
+            </div>
 
             <h2 className="fs-6">
                 28. Crie um componente que recebe um número X e retorna se ele é
