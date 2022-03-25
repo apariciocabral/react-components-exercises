@@ -6,7 +6,6 @@ import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
 import Q16Sum from './components/Q16Sum';
-import Q21Elevated from './components/Q21Elevated';
 
 const App: React.FC = () => {
     return (
