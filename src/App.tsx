@@ -18,6 +18,7 @@ import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
 import Q27Factorial from './components/Q27Factorial';
 import Q28OddEven from './components/Q28OddEven';
+import Q13ChangeChar from './components/Q13ChangeChar';
 
 const App: React.FC = () => {
     return (
@@ -156,7 +157,9 @@ const App: React.FC = () => {
                 <br /> Prop 3: X
                 <br /> Retorno: BXnXnX
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q13ChangeChar value="Bananas" value1="a" value2="X" />
+            </div>
 
             <h2 className="fs-6">
                 14. Crie um componente que recebe uma string e retorna apenas a
