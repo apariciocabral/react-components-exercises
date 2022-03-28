@@ -11,7 +11,7 @@ import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q28OddEven from './components/Q28OddEven';
-import { Q31FiveStar } from './components/Q31FiveStar';
+import Q31FiveStar from './components/Q31FiveStar';
 
 const App: React.FC = () => {
     return (
@@ -282,12 +282,12 @@ const App: React.FC = () => {
                 um pacote de ícones)
             </h2>
             <div className="card p-3 mb-4">
-                <Q31FiveStar amount={0} />
-                <Q31FiveStar amount={1} />
-                <Q31FiveStar amount={2} />
-                <Q31FiveStar amount={3} />
-                <Q31FiveStar amount={4} />
-                <Q31FiveStar amount={5} />
+                <Q31FiveStar score={0} />
+                <Q31FiveStar score={1} />
+                <Q31FiveStar score={2} />
+                <Q31FiveStar score={3} />
+                <Q31FiveStar score={4} />
+                <Q31FiveStar score={5} />
             </div>
 
             <h2 className="fs-6">
