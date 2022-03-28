@@ -1,4 +1,5 @@
 import './App.css';
+import Q19Division from './components/Q19Division';
 import Q1String from './components/Q1String';
 import Q23RandomNumber from './components/Q23RandomNumber';
 import Q2Uppercase from './components/Q2Uppercase';
@@ -199,7 +200,15 @@ const App: React.FC = () => {
                 da divisão entre eles. Se o divisor for zero, retorna
                 &quot;Inválido&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q19Division value={10} value1={2} />
+                <Q19Division value={10} value1={0} />
+                <Q19Division value={0} value1={2} />
+                <Q19Division value={-10} value1={-2} />
+                <Q19Division value={10} value1={-2} />
+                <Q19Division value={-10} value1={2} />
+                <Q19Division value={123.56} value1={4.67} />
+            </div>
 
             <h2 className="fs-6">
                 20. Crie um componente que recebe um número e retorna o mesmo
