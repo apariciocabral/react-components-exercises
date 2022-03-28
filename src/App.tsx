@@ -18,6 +18,7 @@ import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
 import Q27Factorial from './components/Q27Factorial';
 import Q28OddEven from './components/Q28OddEven';
+import Q29Percentage from './components/Q29Percentage';
 
 const App: React.FC = () => {
     return (
@@ -294,7 +295,12 @@ const App: React.FC = () => {
                 29. Crie um componente que recebe dois números, X e Y, retorna
                 qual é a porcentagem de X em relação a Y
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q29Percentage value={45} value1={89} />
+                <Q29Percentage value={89} value1={45} />
+                <Q29Percentage value={10} value1={100} />
+                <Q29Percentage value={100} value1={10} />
+            </div>
 
             <h2 className="fs-6">
                 30. Crie um componente que recebe um número de 0 a 9 e retorna o
