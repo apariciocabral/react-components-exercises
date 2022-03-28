@@ -18,6 +18,7 @@ import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
 import Q27Factorial from './components/Q27Factorial';
 import Q28OddEven from './components/Q28OddEven';
+import Q12LetAndNum from './components/Q12LetAndNum';
 
 const App: React.FC = () => {
     return (
@@ -143,7 +144,12 @@ const App: React.FC = () => {
                 <br /> Prop 2: 3
                 <br /> Retorno: c
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q12LetAndNum position={4} word="Aparicio" />
+                <Q12LetAndNum position={15} word="Aparicio" />
+                <Q12LetAndNum position={5} word="Aparicio" />
+                <Q12LetAndNum position={15} word="Aparicio" />
+            </div>
 
             <h2 className="fs-6">
                 13. Crie um componente que recebe 3 strings. Retorna a primeira
