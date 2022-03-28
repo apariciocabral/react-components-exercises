@@ -6,6 +6,6 @@ interface IQ11IntersectionProps {
 const Q11Intersection: React.FC<IQ11IntersectionProps> = ({
     value,
     value1,
-}) => <p>{value && value.includes(value1) ? 'Sim' : 'Não'}</p>;
+}) => <p>{value.includes(value1) ? 'Sim' : 'Não'}</p>;
 
 export default Q11Intersection;
