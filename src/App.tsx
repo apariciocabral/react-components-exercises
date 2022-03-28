@@ -7,7 +7,13 @@ import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
-import Q9StringComma from './components/Q9StringComma';
+import Q15FirstUppercase from './components/Q15FirstUppercase';
+import Q16Sum from './components/Q16Sum';
+import Q17Subtraction from './components/Q17Subtraction';
+import Q18Multiplication from './components/Q18Multiplication';
+import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
+import Q28OddEven from './components/Q28OddEven';
+import Q27Factorial from './components/Q27Factorial';
 
 const App: React.FC = () => {
     return (
@@ -267,7 +273,9 @@ const App: React.FC = () => {
                 27. Crie um componente que recebe um número X e retorna o seu
                 fatorial
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q27Factorial value={5} />
+            </div>
 
             <h2 className="fs-6">
                 28. Crie um componente que recebe um número X e retorna se ele é
