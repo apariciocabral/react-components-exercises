@@ -18,6 +18,7 @@ import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
 import Q27Factorial from './components/Q27Factorial';
 import Q28OddEven from './components/Q28OddEven';
+import Q32Rectangles from './components/Q32Rectangles';
 
 const App: React.FC = () => {
     return (
@@ -316,7 +317,10 @@ const App: React.FC = () => {
                 <b>width</b> e <b>height</b> respectivamente, e com cor de fundo
                 definido por <b>color</b>, alinhados lado a lado
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q32Rectangles x={3} width={50} height={30} color="yellow" />
+                <Q32Rectangles x={2} width={30} height={20} color="red" />
+            </div>
 
             <h2 className="fs-6">
                 33. Crie um componente que recebe (x, size, color) e retorna X
