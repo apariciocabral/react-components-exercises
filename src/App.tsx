@@ -234,9 +234,10 @@ const App: React.FC = () => {
                 igual a Y, retorna &quot;Inválido&quot;
             </h2>
             <div className="card p-3 mb-4">
-                <Q24RandomNum value={1} value1={10} />
-                <Q24RandomNum value={10} value1={10} />
-                <Q24RandomNum value={20} value1={10} />
+                <Q24RandomNum min={1} max={3} />
+                <Q24RandomNum min={1} max={30} />
+                <Q24RandomNum min={10} max={10} />
+                <Q24RandomNum min={20} max={10} />
             </div>
 
             <h2 className="fs-6">

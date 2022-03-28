@@ -1,13 +1,13 @@
 interface IQ24RandomNumProps {
-    value: number;
-    value1: number;
+    max: number;
+    min: number;
 }
 
-const Q24RandomNum: React.FC<IQ24RandomNumProps> = ({ value, value1 }) => (
+const Q24RandomNum: React.FC<IQ24RandomNumProps> = ({ max, min }) => (
     <p>
-        {value >= value1
+        {min >= max
             ? 'Inválido'
-            : Math.floor(Math.random() * (value - value1 + 1)) + value1}
+            : Math.floor(Math.random() * (max - min + 1)) + min}
     </p>
 );
 
