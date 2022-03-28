@@ -5,6 +5,7 @@ import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
+import Q7BothString from './components/Q7BothString';
 import Q8RepeatString from './components/Q8RepeatString';
 
 const App: React.FC = () => {
@@ -73,7 +74,9 @@ const App: React.FC = () => {
                 <br />
                 Retorno: Oi tudo bem?
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q7BothString value="Eu acho" value1="que é assim!" />
+            </div>
 
             <h2 className="fs-6">
                 8. Crie um componente que recebe duas props, uma string e um
@@ -163,25 +166,33 @@ const App: React.FC = () => {
                 <br /> Prop 1: MaS QuE LoUcUrA.
                 <br /> Retorno: Mas Que Loucura.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q15FirstUppercase value="MaS QuE LoUcUrA" />
+            </div>
 
             <h2 className="fs-6">
                 16. Crie um componente que recebe dois números e retorna o valor
                 da soma entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q16Sum value={12} value1={23} />
+            </div>
 
             <h2 className="fs-6">
                 17. Crie um componente que recebe dois números e retorna o valor
                 da subtração entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q17Subtraction value={25} value1={10} />
+            </div>
 
             <h2 className="fs-6">
                 18. Crie um componente que recebe dois números e retorna o valor
                 da multiplicação entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q18Multiplication value={15} value1={5} />
+            </div>
 
             <h2 className="fs-6">
                 19. Crie um componente que recebe dois números e retorna o valor
@@ -194,7 +205,9 @@ const App: React.FC = () => {
                 20. Crie um componente que recebe um número e retorna o mesmo
                 elevado a 2
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q20ElevatedByTwo value={5} />
+            </div>
 
             <h2 className="fs-6">
                 21. Crie um componente que recebe dois números e retorna o
@@ -244,7 +257,10 @@ const App: React.FC = () => {
                 28. Crie um componente que recebe um número X e retorna se ele é
                 &quot;Par&quot; ou &quot;Ímpar&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q28OddEven value={21} />
+                <Q28OddEven value={22} />
+            </div>
 
             <h2 className="fs-6">
                 29. Crie um componente que recebe dois números, X e Y, retorna
