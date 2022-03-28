@@ -1,15 +1,11 @@
 import './App.css';
-import Q15FirstUppercase from './components/Q15FirstUppercase';
 import Q1String from './components/Q1String';
-import Q28OddEven from './components/Q28OddEven';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
-import Q16Sum from './components/Q16Sum';
 import Q10BiggerText from './components/Q10BiggerText';
-import Q17Subtraction from './components/Q17Subtraction';
 
 const App: React.FC = () => {
     return (
@@ -77,7 +73,9 @@ const App: React.FC = () => {
                 <br />
                 Retorno: Oi tudo bem?
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q7BothString value="Eu acho" value1="que é assim!" />
+            </div>
 
             <h2 className="fs-6">
                 8. Crie um componente que recebe duas props, uma string e um
@@ -100,7 +98,9 @@ const App: React.FC = () => {
                 <br /> Prop 2: 5.
                 <br /> Retorno: Oi, Oi, Oi, Oi, Oi
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q9StringComma value="Olá" amount={5} />
+            </div>
 
             <h2 className="fs-6">
                 10. Crie um componente que recebe duas strings e retorna a que
