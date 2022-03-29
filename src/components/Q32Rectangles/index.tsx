@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useEffect } from 'react';
 
 interface IQ32RectanglesProps {
     x: number;
@@ -15,14 +15,16 @@ const Q32Rectangles: React.FC<IQ32RectanglesProps> = ({
 }) => {
     const rectangleArray = [] as number[];
 
-    const buildRectanglesArray = useCallback(() => {
+    const getBuildRectanglesArray = (): void => {
         for (let i = 1; i <= x; i += 1) {
             rectangleArray.push(i);
         }
+    };
+
+    useEffect(() => {
+        getBuildRectanglesArray();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-
-    buildRectanglesArray();
 
     return (
         <div className="d-flex">

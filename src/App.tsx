@@ -319,7 +319,6 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q32Rectangles x={3} width={50} height={30} color="yellow" />
-                <Q32Rectangles x={2} width={30} height={20} color="red" />
             </div>
 
             <h2 className="fs-6">
