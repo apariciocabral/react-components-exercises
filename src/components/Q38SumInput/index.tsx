@@ -4,7 +4,6 @@ const Q38SumInput: React.FC = () => {
     const [value, setValue] = useState(0);
     const [value1, setValue1] = useState(0);
     const [sum, setSum] = useState(0);
-    const result = value + value1;
 
     return (
         <>
@@ -30,7 +29,7 @@ const Q38SumInput: React.FC = () => {
                 <button
                     className="btn btn-primary mb-3"
                     type="button"
-                    onClick={() => setSum(result)}
+                    onClick={() => setSum(value + value1)}
                 >
                     Somar
                 </button>
