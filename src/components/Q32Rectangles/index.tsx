@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useMemo } from 'react';
 
 interface IQ32RectanglesProps {
     x: number;
@@ -13,17 +13,17 @@ const Q32Rectangles: React.FC<IQ32RectanglesProps> = ({
     height,
     color,
 }) => {
-    const [rectangleArray] = useState();
-    useEffect(() => {
+    const rectangles = useMemo(() => {
+        const r = [];
         for (let i = 1; i <= x; i += 1) {
-            rectangleArray.push(i);
+            r.push(i);
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+        return r;
+    }, [x]);
 
     return (
         <div className="d-flex">
-            {rectangleArray.map(index => (
+            {rectangles.map(index => (
                 <div
                     key={index}
                     className="m-2"

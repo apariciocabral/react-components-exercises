@@ -318,7 +318,7 @@ const App: React.FC = () => {
                 definido por <b>color</b>, alinhados lado a lado
             </h2>
             <div className="card p-3 mb-4">
-                <Q32Rectangles x={3} width={50} height={30} color="yellow" />
+                <Q32Rectangles x={3} width={50} height={50} color="yellow" />
             </div>
 
             <h2 className="fs-6">
