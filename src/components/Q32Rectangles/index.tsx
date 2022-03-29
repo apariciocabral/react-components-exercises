@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 interface IQ32RectanglesProps {
     x: number;
@@ -13,16 +13,11 @@ const Q32Rectangles: React.FC<IQ32RectanglesProps> = ({
     height,
     color,
 }) => {
-    const rectangleArray = [] as number[];
-
-    const getBuildRectanglesArray = (): void => {
+    const [rectangleArray] = useState();
+    useEffect(() => {
         for (let i = 1; i <= x; i += 1) {
             rectangleArray.push(i);
         }
-    };
-
-    useEffect(() => {
-        getBuildRectanglesArray();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
