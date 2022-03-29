@@ -148,7 +148,7 @@ const App: React.FC = () => {
                 <Q12LetAndNum position={4} word="Aparicio" />
                 <Q12LetAndNum position={15} word="Aparicio" />
                 <Q12LetAndNum position={5} word="Aparicio" />
-                <Q12LetAndNum position={15} word="Aparicio" />
+                <Q12LetAndNum position={12} word="Aparicio" />
             </div>
 
             <h2 className="fs-6">
