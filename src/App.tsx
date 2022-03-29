@@ -1,23 +1,24 @@
 import './App.css';
-import Q1String from './components/Q1String';
-import Q2Uppercase from './components/Q2Uppercase';
-import Q3Lowercase from './components/Q3Lowercase';
-import Q4StringLength from './components/Q4StringLength';
-import Q5FirstChar from './components/Q5FirstChar';
-import Q6LastChar from './components/Q6LastChar';
-import Q7BothString from './components/Q7BothString';
-import Q9StringComma from './components/Q9StringComma';
 import Q15FirstUppercase from './components/Q15FirstUppercase';
 import Q16Sum from './components/Q16Sum';
 import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q19Division from './components/Q19Division';
+import Q1String from './components/Q1String';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q21Elevated from './components/Q21Elevated';
 import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
 import Q27Factorial from './components/Q27Factorial';
 import Q28OddEven from './components/Q28OddEven';
+import Q2Uppercase from './components/Q2Uppercase';
+import Q3Lowercase from './components/Q3Lowercase';
+import Q4StringLength from './components/Q4StringLength';
+import Q5FirstChar from './components/Q5FirstChar';
+import Q6LastChar from './components/Q6LastChar';
+import Q7BothString from './components/Q7BothString';
+import Q8RepeatString from './components/Q8RepeatString';
+import Q9StringComma from './components/Q9StringComma';
 
 const App: React.FC = () => {
     return (
@@ -98,7 +99,9 @@ const App: React.FC = () => {
                 <br /> Prop 2: 5.
                 <br /> Retorno: OiOiOiOiOi
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q8RepeatString value="Olá" value1={5} />
+            </div>
 
             <h2 className="fs-6">
                 9. Crie um componente que recebe duas props, uma string e um
