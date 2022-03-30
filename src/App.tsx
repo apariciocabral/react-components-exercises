@@ -19,6 +19,9 @@ import Q6LastChar from './components/Q6LastChar';
 import Q7BothString from './components/Q7BothString';
 import Q8RepeatString from './components/Q8RepeatString';
 import Q9StringComma from './components/Q9StringComma';
+import Q14OnlyFirstUppercase from './components/Q14OnlyFirstUppercase';
+import Q16Sum from './components/Q16Sum';
+import Q17Subtraction from './components/Q17Subtraction';
 
 const App: React.FC = () => {
     return (
@@ -169,7 +172,10 @@ const App: React.FC = () => {
                 <br /> Prop 1: MaS QuE LoUcUrA.
                 <br /> Retorno: Mas que loucura.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q14OnlyFirstUppercase value="MaS QuE LoUcUrA." />
+                <Q14OnlyFirstUppercase value="m" />
+            </div>
 
             <h2 className="fs-6">
                 15. Crie um componente que recebe uma string e retorna a
