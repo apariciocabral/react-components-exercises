@@ -14,6 +14,7 @@ import Q28OddEven from './components/Q28OddEven';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q37ReceiveText from './components/Q37ReceiveText';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q40LowercaseText from './components/Q40LowercaseText';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
@@ -387,7 +388,9 @@ const App: React.FC = () => {
                 no botão o segundo input deve receber o valor do primeiro,
                 convertido para letras maiúsculas
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q40LowercaseText />
+            </div>
 
             <h2 className="fs-6">
                 41. Crie um componente que tem um mapa do Google Maps, 2 inputs
