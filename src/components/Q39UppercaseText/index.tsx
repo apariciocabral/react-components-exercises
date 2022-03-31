@@ -18,7 +18,7 @@ const Q39UppercaseText: React.FC = () => {
 
             <div>
                 <button
-                    type="submit"
+                    type="button"
                     className="btn btn-primary mb-3"
                     onClick={() => setResultText(text)}
                 >
@@ -27,7 +27,7 @@ const Q39UppercaseText: React.FC = () => {
                 <input
                     readOnly
                     className="form-control mb-3"
-                    value={resultText.toUpperCase()}
+                    value={resultText.toLocaleUpperCase()}
                 />
             </div>
         </>
