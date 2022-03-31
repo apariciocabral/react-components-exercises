@@ -1,17 +1,10 @@
 import './App.css';
-import Q1String from './components/Q1String';
-import Q2Uppercase from './components/Q2Uppercase';
-import Q3Lowercase from './components/Q3Lowercase';
-import Q4StringLength from './components/Q4StringLength';
-import Q5FirstChar from './components/Q5FirstChar';
-import Q6LastChar from './components/Q6LastChar';
-import Q7BothString from './components/Q7BothString';
-import Q9StringComma from './components/Q9StringComma';
 import Q15FirstUppercase from './components/Q15FirstUppercase';
 import Q16Sum from './components/Q16Sum';
 import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q19Division from './components/Q19Division';
+import Q1String from './components/Q1String';
 import Q20ElevatedByTwo from './components/Q20ElevatedByTwo';
 import Q21Elevated from './components/Q21Elevated';
 import Q22BiggerNumber from './components/Q22BiggerNumber';
@@ -19,6 +12,22 @@ import Q23RandomNumber from './components/Q23RandomNumber';
 import Q27Factorial from './components/Q27Factorial';
 import Q28OddEven from './components/Q28OddEven';
 import Q32Rectangles from './components/Q32Rectangles';
+import Q12LetAndNum from './components/Q12LetAndNum';
+import Q2Uppercase from './components/Q2Uppercase';
+import Q37ReceiveText from './components/Q37ReceiveText';
+import Q3Lowercase from './components/Q3Lowercase';
+import Q40LowercaseText from './components/Q40LowercaseText';
+import Q4StringLength from './components/Q4StringLength';
+import Q5FirstChar from './components/Q5FirstChar';
+import Q6LastChar from './components/Q6LastChar';
+import Q31FiveStar from './components/Q31FiveStar';
+import Q7BothString from './components/Q7BothString';
+import Q8RepeatString from './components/Q8RepeatString';
+import Q9StringComma from './components/Q9StringComma';
+import Q10BiggerText from './components/Q10BiggerText';
+import Q14OnlyFirstUppercase from './components/Q14OnlyFirstUppercase';
+import Q16Sum from './components/Q16Sum';
+import Q17Subtraction from './components/Q17Subtraction';
 
 const App: React.FC = () => {
     return (
@@ -99,7 +108,9 @@ const App: React.FC = () => {
                 <br /> Prop 2: 5.
                 <br /> Retorno: OiOiOiOiOi
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q8RepeatString value="Olá" value1={5} />
+            </div>
 
             <h2 className="fs-6">
                 9. Crie um componente que recebe duas props, uma string e um
@@ -119,7 +130,10 @@ const App: React.FC = () => {
                 10. Crie um componente que recebe duas strings e retorna a que
                 tiver mais caracteres.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q10BiggerText value="Aparicio" value1="Diego Cabral" />
+                <Q10BiggerText value="Diego Aparicio" value1="Aparicio" />
+            </div>
 
             <h2 className="fs-6">
                 11. Crie um componente que recebe duas strings e retorna
@@ -144,7 +158,12 @@ const App: React.FC = () => {
                 <br /> Prop 2: 3
                 <br /> Retorno: c
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q12LetAndNum position={4} word="Aparicio" />
+                <Q12LetAndNum position={15} word="Aparicio" />
+                <Q12LetAndNum position={5} word="Aparicio" />
+                <Q12LetAndNum position={12} word="Aparicio" />
+            </div>
 
             <h2 className="fs-6">
                 13. Crie um componente que recebe 3 strings. Retorna a primeira
@@ -167,7 +186,10 @@ const App: React.FC = () => {
                 <br /> Prop 1: MaS QuE LoUcUrA.
                 <br /> Retorno: Mas que loucura.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q14OnlyFirstUppercase value="MaS QuE LoUcUrA." />
+                <Q14OnlyFirstUppercase value="m" />
+            </div>
 
             <h2 className="fs-6">
                 15. Crie um componente que recebe uma string e retorna a
@@ -309,7 +331,14 @@ const App: React.FC = () => {
                 retorna de 0 a 5 estrelas amarelas e o restante cinzas (utilize
                 um pacote de ícones)
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q31FiveStar score={0} />
+                <Q31FiveStar score={1} />
+                <Q31FiveStar score={2} />
+                <Q31FiveStar score={3} />
+                <Q31FiveStar score={4} />
+                <Q31FiveStar score={5} />
+            </div>
 
             <h2 className="fs-6">
                 32. Crie um componente que recebe (x, width, height, color) e
@@ -354,7 +383,9 @@ const App: React.FC = () => {
                 div vazia. Ao clicar no botão, a div deve receber o texto que
                 estiver escrito no input
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q37ReceiveText />
+            </div>
 
             <h2 className="fs-6">
                 38. Crie um componente que tem 2 inputs de número, um terceiro
@@ -378,7 +409,9 @@ const App: React.FC = () => {
                 no botão o segundo input deve receber o valor do primeiro,
                 convertido para letras maiúsculas
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q40LowercaseText />
+            </div>
 
             <h2 className="fs-6">
                 41. Crie um componente que tem um mapa do Google Maps, 2 inputs
