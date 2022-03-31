@@ -18,6 +18,7 @@ import Q2Uppercase from './components/Q2Uppercase';
 import Q33Circles from './components/Q33Circles';
 import Q37ReceiveText from './components/Q37ReceiveText';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q42AddOneLine from './components/Q42AddOneLine';
 import Q40LowercaseText from './components/Q40LowercaseText';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
@@ -434,7 +435,9 @@ const App: React.FC = () => {
                 texto do input deve ser adicionado uma linha abaixo do texto
                 adicionado anteriormente
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q42AddOneLine />
+            </div>
 
             <h2 className="fs-6">
                 43. Crie um componente que tem um <b>span</b> com o número zero
