@@ -23,6 +23,7 @@ import Q40LowercaseText from './components/Q40LowercaseText';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
+import Q24RandomNum from './components/Q24RandomNum';
 import Q36Button from './components/Q36Button';
 import Q11Intersection from './components/Q11Intersection';
 import Q31FiveStar from './components/Q31FiveStar';
@@ -289,7 +290,12 @@ const App: React.FC = () => {
                 um número inteiro aleatório entre X e Y. Caso X seja maior ou
                 igual a Y, retorna &quot;Inválido&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q24RandomNum min={1} max={3} />
+                <Q24RandomNum min={1} max={30} />
+                <Q24RandomNum min={10} max={10} />
+                <Q24RandomNum min={20} max={10} />
+            </div>
 
             <h2 className="fs-6">
                 25. Crie um componente que recebe um número e retorna
