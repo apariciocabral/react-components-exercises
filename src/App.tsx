@@ -23,6 +23,7 @@ import Q40LowercaseText from './components/Q40LowercaseText';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
+import Q11Intersection from './components/Q11Intersection';
 import Q31FiveStar from './components/Q31FiveStar';
 import Q7BothString from './components/Q7BothString';
 import Q8RepeatString from './components/Q8RepeatString';
@@ -148,7 +149,10 @@ const App: React.FC = () => {
                 <br /> Prop 2: mente
                 <br /> Retorno: Sim
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q11Intersection value="Ausente" value1="ente" />
+                <Q11Intersection value="Ausente" value1="anta" />
+            </div>
 
             <h2 className="fs-6">
                 12. Crie um componente que recebe uma string e um número.
