@@ -17,6 +17,9 @@ import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
 import Q25IsPrime from './components/Q25IsPrime';
+import Q8RepeatString from './components/Q8RepeatString';
+import Q9StringComma from './components/Q9StringComma';
+import Q7BothString from './components/Q7BothString';
 
 const App: React.FC = () => {
     return (
