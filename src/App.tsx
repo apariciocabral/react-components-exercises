@@ -21,6 +21,7 @@ import Q6LastChar from './components/Q6LastChar';
 import Q7BothString from './components/Q7BothString';
 import Q8RepeatString from './components/Q8RepeatString';
 import Q9StringComma from './components/Q9StringComma';
+import Q10BiggerText from './components/Q10BiggerText';
 import Q14OnlyFirstUppercase from './components/Q14OnlyFirstUppercase';
 import Q16Sum from './components/Q16Sum';
 import Q17Subtraction from './components/Q17Subtraction';
@@ -126,7 +127,10 @@ const App: React.FC = () => {
                 10. Crie um componente que recebe duas strings e retorna a que
                 tiver mais caracteres.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q10BiggerText value="Aparicio" value1="Diego Cabral" />
+                <Q10BiggerText value="Diego Aparicio" value1="Aparicio" />
+            </div>
 
             <h2 className="fs-6">
                 11. Crie um componente que recebe duas strings e retorna
