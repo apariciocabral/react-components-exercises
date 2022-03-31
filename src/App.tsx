@@ -30,6 +30,7 @@ import Q31FiveStar from './components/Q31FiveStar';
 import Q7BothString from './components/Q7BothString';
 import Q8RepeatString from './components/Q8RepeatString';
 import Q9StringComma from './components/Q9StringComma';
+import Q13ChangeChar from './components/Q13ChangeChar';
 import Q10BiggerText from './components/Q10BiggerText';
 import Q14OnlyFirstUppercase from './components/Q14OnlyFirstUppercase';
 import Q16Sum from './components/Q16Sum';
@@ -185,7 +186,9 @@ const App: React.FC = () => {
                 <br /> Prop 3: X
                 <br /> Retorno: BXnXnX
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q13ChangeChar value="Bananas" value1="a" value2="X" />
+            </div>
 
             <h2 className="fs-6">
                 14. Crie um componente que recebe uma string e retorna apenas a
