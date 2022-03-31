@@ -300,6 +300,11 @@ const App: React.FC = () => {
                 <Q29Percentage value={89} value1={45} />
                 <Q29Percentage value={10} value1={100} />
                 <Q29Percentage value={100} value1={10} />
+                <Q29Percentage value={100} value1={100} />
+                <Q29Percentage value={50} value1={-10} />
+                <Q29Percentage value={-50} value1={10} />
+                <Q29Percentage value={0} value1={10} />
+                <Q29Percentage value={50} value1={0} />
             </div>
 
             <h2 className="fs-6">
