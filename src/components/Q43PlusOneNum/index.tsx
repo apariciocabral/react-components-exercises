@@ -10,7 +10,7 @@ const Q43PlusOneNum: React.FC = () => {
             </span>
 
             <button
-                type="submit"
+                type="button"
                 id="incrementor"
                 onClick={() => setPlusOne(plusOne + 1)}
             >
