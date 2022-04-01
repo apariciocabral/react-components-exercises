@@ -34,6 +34,7 @@ import Q37ReceiveText from './components/Q37ReceiveText';
 import Q38SumInput from './components/Q38SumInput';
 import Q40LowercaseText from './components/Q40LowercaseText';
 import Q42AddOneLine from './components/Q42AddOneLine';
+import Q34UrlLinks from './components/Q34UrlLinks';
 
 const App: React.FC = () => {
     return (
@@ -380,7 +381,21 @@ const App: React.FC = () => {
                 url) e retorna uma lista de links externos que apontem para{' '}
                 <b>url</b> e que sejam descritos por <b>label</b>
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q34UrlLinks
+                    oneArray={[
+                        {
+                            url: 'https://app.rocketseat.com.br/',
+                            label: 'Rocketseat',
+                        },
+                        {
+                            url: 'https://jornadadodev.com.br/',
+                            label: 'Jornada do Dev',
+                        },
+                        { url: 'https://www.netlify.com/', label: 'Netlify' },
+                    ]}
+                />
+            </div>
 
             <h2 className="fs-6">
                 35. Crie um componente que recebe um array de urls de imagens,
