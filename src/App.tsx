@@ -34,6 +34,7 @@ import Q37ReceiveText from './components/Q37ReceiveText';
 import Q38SumInput from './components/Q38SumInput';
 import Q40LowercaseText from './components/Q40LowercaseText';
 import Q42AddOneLine from './components/Q42AddOneLine';
+import Q35ReturnImages from './components/Q35ReturnImages';
 
 const App: React.FC = () => {
     return (
@@ -387,7 +388,17 @@ const App: React.FC = () => {
                 uma segunda prop <b>size</b> e retorna essas imagens em formato
                 quadrado do tamanho de <b>size</b>, lado a lado
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q35ReturnImages
+                    urls={[
+                        'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.boatshopping.com.br%2Flifestyle%2Fconheca-os-10-carros-de-luxo-mais-caros-de-famosos%2F&psig=AOvVaw04BFIFFafa094V2e4-k9Zi&ust=1648904927931000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJid8tj38vYCFQAAAAAdAAAAABAD',
+                        'https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.paitomotors.com.br%2F2020%2F12%2F03%2Fcarros-de-luxo%2F&psig=AOvVaw04BFIFFafa094V2e4-k9Zi&ust=1648904927931000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJid8tj38vYCFQAAAAAdAAAAABAJ',
+                        'https://www.google.com/url?sa=i&url=https%3A%2F%2Fsulcarro.com.br%2Fcarros-de-luxo-mais-top&psig=AOvVaw04BFIFFafa094V2e4-k9Zi&ust=1648904927931000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJid8tj38vYCFQAAAAAdAAAAABAV',
+                        'https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos%2Fimagens-da-natureza&psig=AOvVaw36zrhKoI78hb8snl2R1zM3&ust=1648905142604000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCICvjb748vYCFQAAAAAdAAAAABAD',
+                    ]}
+                    size={50}
+                />
+            </div>
 
             <h2 className="fs-6">
                 36. Crie um componente que recebe (label, color) e retorne um
