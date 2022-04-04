@@ -33,7 +33,7 @@ const Q48Advice: React.FC = () => {
             </span>
             <div>
                 <button
-                    className="btn btn-primary ms-3"
+                    className="btn btn-primary mt-3"
                     type="button"
                     onClick={getAdvice}
                 >
