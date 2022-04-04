@@ -34,6 +34,7 @@ import Q37ReceiveText from './components/Q37ReceiveText';
 import Q38SumInput from './components/Q38SumInput';
 import Q40LowercaseText from './components/Q40LowercaseText';
 import Q42AddOneLine from './components/Q42AddOneLine';
+import Q49Pokemon from './components/Q49Pokemon';
 
 const App: React.FC = () => {
     return (
@@ -519,7 +520,9 @@ const App: React.FC = () => {
                 nome do pokemon) e retornar a foto do pokemon escolhido no{' '}
                 <b>select</b>. Exibir um loading enquanto procura
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q49Pokemon />
+            </div>
 
             <h2 className="fs-6">
                 50. Crie um componente que tem um um botão, ao clicar no botão o
