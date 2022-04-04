@@ -24,7 +24,13 @@ const Q49Pokemon: React.FC = () => {
 
     return (
         <div>
-            {isLoading ? 'Loading' : <img src={pokemonPic} alt="Pokemon" />}
+            {isLoading ? (
+                <div className="spinner-border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </div>
+            ) : (
+                <img src={pokemonPic} alt="Pokemon" />
+            )}
             <select
                 className="form-select mb-3"
                 onChange={e => setPokemon(e.target.value)}
