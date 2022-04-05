@@ -312,7 +312,7 @@ const App: React.FC = () => {
                 primeiros X números primos
             </h2>
             <div className="card p-3 mb-4">
-                <Q26FirstPrimeNum value={7} />
+                <Q26FirstPrimeNum value={1} />
             </div>
 
             <h2 className="fs-6">
