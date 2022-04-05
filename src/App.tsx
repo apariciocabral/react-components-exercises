@@ -34,6 +34,7 @@ import Q37ReceiveText from './components/Q37ReceiveText';
 import Q38SumInput from './components/Q38SumInput';
 import Q40LowercaseText from './components/Q40LowercaseText';
 import Q42AddOneLine from './components/Q42AddOneLine';
+import Q30ZeroToHundred from './components/Q30ZeroToHundred';
 
 const App: React.FC = () => {
     return (
@@ -340,7 +341,18 @@ const App: React.FC = () => {
                 número de quantas vezes esse número aparece em uma contagem de
                 de 0 a 100
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q30ZeroToHundred value={0} />
+                <Q30ZeroToHundred value={1} />
+                <Q30ZeroToHundred value={2} />
+                <Q30ZeroToHundred value={3} />
+                <Q30ZeroToHundred value={4} />
+                <Q30ZeroToHundred value={5} />
+                <Q30ZeroToHundred value={6} />
+                <Q30ZeroToHundred value={7} />
+                <Q30ZeroToHundred value={8} />
+                <Q30ZeroToHundred value={9} />
+            </div>
 
             <h2 className="fs-6">
                 31. Crie um componente que recebe uma pontuação de 0 a 5 e
