@@ -312,7 +312,7 @@ const App: React.FC = () => {
                 primeiros X números primos
             </h2>
             <div className="card p-3 mb-4">
-                <Q26FirstPrimeNum value={50} />
+                <Q26FirstPrimeNum value={7} />
             </div>
 
             <h2 className="fs-6">
@@ -320,7 +320,7 @@ const App: React.FC = () => {
                 fatorial
             </h2>
             <div className="card p-3 mb-4">
-                <Q27Factorial value={5} />
+                <Q27Factorial value={3} />
             </div>
 
             <h2 className="fs-6">

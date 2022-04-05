@@ -17,17 +17,15 @@ interface IQ26FirstPrimeNumProps {
 const Q26FirstPrimeNum: React.FC<IQ26FirstPrimeNumProps> = ({ value }) => {
     const primes = [];
     let findPrime = 0;
-    let countPrime = 0;
 
-    while (countPrime < value) {
+    while (primes.length < value) {
         findPrime += 1;
         if (isPrime(findPrime)) {
             primes.push(findPrime);
-            countPrime += 1;
         }
     }
 
-    return <span>{primes}</span>;
+    return <span>{primes.join(', ')}</span>;
 };
 
 export default Q26FirstPrimeNum;
