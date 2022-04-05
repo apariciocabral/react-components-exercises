@@ -34,6 +34,7 @@ import Q37ReceiveText from './components/Q37ReceiveText';
 import Q38SumInput from './components/Q38SumInput';
 import Q40LowercaseText from './components/Q40LowercaseText';
 import Q42AddOneLine from './components/Q42AddOneLine';
+import Q26FirstPrimeNum from './components/Q26FirstPrimeNum';
 
 const App: React.FC = () => {
     return (
@@ -310,14 +311,16 @@ const App: React.FC = () => {
                 26. Crie um componente que recebe um número X e retorna os
                 primeiros X números primos
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q26FirstPrimeNum value={7} />
+            </div>
 
             <h2 className="fs-6">
                 27. Crie um componente que recebe um número X e retorna o seu
                 fatorial
             </h2>
             <div className="card p-3 mb-4">
-                <Q27Factorial value={5} />
+                <Q27Factorial value={3} />
             </div>
 
             <h2 className="fs-6">
