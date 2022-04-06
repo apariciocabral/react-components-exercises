@@ -29,6 +29,7 @@ import Q28OddEven from './components/Q28OddEven';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q39UppercaseText from './components/Q39UppercaseText';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q43PlusOneNum from './components/Q43PlusOneNum';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
@@ -479,7 +480,9 @@ const App: React.FC = () => {
                 e um botão. A cada vez que o botão for apertado, o número
                 contido no <b>span</b> deve receber +1
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q43PlusOneNum />
+            </div>
 
             <h2 className="fs-6">
                 44. Crie um componente que tem um <b>span</b> vazio, um input de
