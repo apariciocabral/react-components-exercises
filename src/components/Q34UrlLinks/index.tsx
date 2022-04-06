@@ -1,23 +1,19 @@
-import { ExternalLinksType } from '../../@types/ExternalLinks';
-
-type NewType = ExternalLinksType;
+import { ExternalLinkType } from '../../@types/ExternalLink';
 
 interface IQ34UrlLinksProps {
-    oneArray: NewType[];
+    images: ExternalLinkType[];
 }
 
-const Q34UrlLinks: React.FC<IQ34UrlLinksProps> = ({ oneArray }) => {
-    return (
-        <ul>
-            {oneArray.map(item => (
-                <li key={item.label}>
-                    <a href={item.url} target="_blank" rel="noreferrer">
-                        {item.label}
-                    </a>
-                </li>
-            ))}
-        </ul>
-    );
-};
+const Q34UrlLinks: React.FC<IQ34UrlLinksProps> = ({ images }) => (
+    <ul>
+        {images.map(image => (
+            <li key={image.label}>
+                <a href={image.url} target="_blank" rel="noreferrer">
+                    {image.label}
+                </a>
+            </li>
+        ))}
+    </ul>
+);
 
 export default Q34UrlLinks;
