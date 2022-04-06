@@ -313,6 +313,11 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q26FirstPrimeNum value={1} />
+                <Q26FirstPrimeNum value={2} />
+                <Q26FirstPrimeNum value={3} />
+                <Q26FirstPrimeNum value={4} />
+                <Q26FirstPrimeNum value={5} />
+                <Q26FirstPrimeNum value={20} />
             </div>
 
             <h2 className="fs-6">
