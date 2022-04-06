@@ -26,6 +26,18 @@ import Q23RandomNumber from './components/Q23RandomNumber';
 import Q24RandomNum from './components/Q24RandomNum';
 import Q27Factorial from './components/Q27Factorial';
 import Q28OddEven from './components/Q28OddEven';
+import Q2Uppercase from './components/Q2Uppercase';
+import Q39UppercaseText from './components/Q39UppercaseText';
+import Q3Lowercase from './components/Q3Lowercase';
+import Q44ChangeColorText from './components/Q44ChangeColorText';
+import Q43PlusOneNum from './components/Q43PlusOneNum';
+import Q4StringLength from './components/Q4StringLength';
+import Q5FirstChar from './components/Q5FirstChar';
+import Q6LastChar from './components/Q6LastChar';
+import Q25IsPrime from './components/Q25IsPrime';
+import Q8RepeatString from './components/Q8RepeatString';
+import Q9StringComma from './components/Q9StringComma';
+import Q7BothString from './components/Q7BothString';
 import Q31FiveStar from './components/Q31FiveStar';
 import Q32Rectangles from './components/Q32Rectangles';
 import Q33Circles from './components/Q33Circles';
@@ -35,6 +47,8 @@ import Q38SumInput from './components/Q38SumInput';
 import Q40LowercaseText from './components/Q40LowercaseText';
 import Q42AddOneLine from './components/Q42AddOneLine';
 import Q30ZeroToHundred from './components/Q30ZeroToHundred';
+import Q48Advice from './components/Q48Advice';
+import Q46SearchCep from './components/Q46SearchCep';
 
 const App: React.FC = () => {
     return (
@@ -305,7 +319,14 @@ const App: React.FC = () => {
                 &quot;Sim&quot; se ele for primo. Caso contrário, retorna
                 &quot;Não&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q25IsPrime value={6} />
+                <Q25IsPrime value={0} />
+                <Q25IsPrime value={1} />
+                <Q25IsPrime value={-2} />
+                <Q25IsPrime value={5} />
+                <Q25IsPrime value={12} />
+            </div>
 
             <h2 className="fs-6">
                 26. Crie um componente que recebe um número X e retorna os
@@ -435,7 +456,9 @@ const App: React.FC = () => {
                 no botão o segundo input deve receber o valor do primeiro,
                 convertido para letras maiúsculas
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q39UppercaseText />
+            </div>
 
             <h2 className="fs-6">
                 40. Crie um componente que tem um input de texto, um segundo
@@ -471,7 +494,9 @@ const App: React.FC = () => {
                 e um botão. A cada vez que o botão for apertado, o número
                 contido no <b>span</b> deve receber +1
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q43PlusOneNum />
+            </div>
 
             <h2 className="fs-6">
                 44. Crie um componente que tem um <b>span</b> vazio, um input de
@@ -481,7 +506,9 @@ const App: React.FC = () => {
                 qualquer botão, deve-se alterar a cor do texto que está dentro
                 do span
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q44ChangeColorText />
+            </div>
 
             <h2 className="fs-6">
                 45. Crie um componente que tem um <b>span</b> vazio, um input de
@@ -502,7 +529,9 @@ const App: React.FC = () => {
                 Obs: Deve ser exibido um ícone de loading enquanto a API estiver
                 buscando o CEP
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q46SearchCep />
+            </div>
 
             <h2 className="fs-6">
                 47. Crie um componente que tem um input de número (dólares), um
@@ -521,7 +550,9 @@ const App: React.FC = () => {
                 Conselhos (https://api.adviceslip.com/advice) e retornar dentro
                 do <b>span</b> um conselho. Exibir um loading enquanto procura
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q48Advice />
+            </div>
 
             <h2 className="fs-6">
                 49. Crie um componente que tem um campo do tipo select com 5
