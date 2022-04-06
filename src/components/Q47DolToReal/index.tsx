@@ -15,7 +15,6 @@ const Q47DolToReal: React.FC = () => {
                 'https://economia.awesomeapi.com.br/json/last/USD-BRL'
             );
             const { bid } = response.data.USD;
-            console.log('bid', bid);
             setResult(dollar * parseFloat(bid));
         } catch {
             setResult(0);
@@ -29,7 +28,7 @@ const Q47DolToReal: React.FC = () => {
             <input
                 className="m-3"
                 type="number"
-                onChange={e => setDollar(parseInt(e.target.value, 10))}
+                onChange={e => setDollar(parseFloat(e.target.value))}
             />
             <span>
                 <b>R$ </b>
