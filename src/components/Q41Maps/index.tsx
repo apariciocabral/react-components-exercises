@@ -15,9 +15,12 @@ const Marker: React.FC<IMarkerProps> = () => (
 );
 
 const Q41Maps: React.FC = () => {
-    const [latitude, setLatitude] = useState(-22.5465);
-    const [longitude, setLongitude] = useState(-44.365);
-    const [coordinate, setCoordinate] = useState([latitude, longitude]);
+    const [latitude, setLatitude] = useState('-22.5465');
+    const [longitude, setLongitude] = useState('-44.365');
+    const [coordinate, setCoordinate] = useState({
+        lat: parseFloat(latitude),
+        lng: parseFloat(longitude),
+    });
 
     return (
         <div>
@@ -29,9 +32,7 @@ const Q41Maps: React.FC = () => {
                             type="text"
                             className="form-control"
                             value={latitude}
-                            onChange={e =>
-                                setLatitude(parseInt(e.target.value, 10))
-                            }
+                            onChange={e => setLatitude(e.target.value)}
                         />
                     </div>
                     <h4>Longitude</h4>
@@ -40,16 +41,19 @@ const Q41Maps: React.FC = () => {
                             type="text"
                             className="form-control"
                             value={longitude}
-                            onChange={e =>
-                                setLongitude(parseInt(e.target.value, 10))
-                            }
+                            onChange={e => setLongitude(e.target.value)}
                         />
                     </div>
                     <div>
                         <button
                             type="button"
                             className="btn btn-primary"
-                            onClick={() => setCoordinate([latitude, longitude])}
+                            onClick={() =>
+                                setCoordinate({
+                                    lat: parseFloat(latitude),
+                                    lng: parseFloat(longitude),
+                                })
+                            }
                         >
                             Pesquisar
                         </button>
@@ -61,14 +65,12 @@ const Q41Maps: React.FC = () => {
                         bootstrapURLKeys={{
                             key: `${process.env.REACT_APP_GOOGLE_KEY}`,
                         }}
-                        defaultCenter={{
-                            lat: coordinate[0],
-                            lng: coordinate[1],
-                        }}
-                        defaultZoom={15}
+                        defaultCenter={coordinate}
+                        center={coordinate}
+                        defaultZoom={13}
                         yesIWantToUseGoogleMapApiInternals
                     >
-                        <Marker lat={coordinate[0]} lng={coordinate[1]} />
+                        <Marker lat={coordinate.lat} lng={coordinate.lng} />
                     </GoogleMapReact>
                 </div>
             </div>

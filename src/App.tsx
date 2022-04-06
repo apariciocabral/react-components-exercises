@@ -34,7 +34,7 @@ import Q37ReceiveText from './components/Q37ReceiveText';
 import Q38SumInput from './components/Q38SumInput';
 import Q40LowercaseText from './components/Q40LowercaseText';
 import Q42AddOneLine from './components/Q42AddOneLine';
-import Q41Maps from './components/Q41';
+import Q41Maps from './components/Q41Maps';
 
 const App: React.FC = () => {
     return (
