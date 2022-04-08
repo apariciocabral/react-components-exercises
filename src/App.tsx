@@ -396,7 +396,7 @@ const App: React.FC = () => {
                         'https://www.google.com/url?sa=i&url=https%3A%2F%2Fsulcarro.com.br%2Fcarros-de-luxo-mais-top&psig=AOvVaw04BFIFFafa094V2e4-k9Zi&ust=1648904927931000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJid8tj38vYCFQAAAAAdAAAAABAV',
                         'https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos%2Fimagens-da-natureza&psig=AOvVaw36zrhKoI78hb8snl2R1zM3&ust=1648905142604000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCICvjb748vYCFQAAAAAdAAAAABAD',
                     ]}
-                    size={50}
+                    size={80}
                 />
             </div>
 
