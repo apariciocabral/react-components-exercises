@@ -8,12 +8,11 @@ const Q35ReturnImages: React.FC<IQ35ReturnImagesProps> = ({ images, size }) => {
         <div className="d-flex">
             {images.map(image => (
                 <div
-                    key={image}
                     className="m-3"
+                    background-Image={image}
                     style={{
                         width: size,
                         height: size,
-                        backgroundImage: image,
                     }}
                 />
             ))}
