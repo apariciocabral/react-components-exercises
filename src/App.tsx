@@ -391,12 +391,11 @@ const App: React.FC = () => {
             <div className="card p-3 mb-4">
                 <Q35ReturnImages
                     images={[
-                        'https://br.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_13382096.htm#query=imagem&position=0&from_view=keyword',
-                        'https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.paitomotors.com.br%2F2020%2F12%2F03%2Fcarros-de-luxo%2F&psig=AOvVaw04BFIFFafa094V2e4-k9Zi&ust=1648904927931000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJid8tj38vYCFQAAAAAdAAAAABAJ',
-                        'https://www.google.com/url?sa=i&url=https%3A%2F%2Fsulcarro.com.br%2Fcarros-de-luxo-mais-top&psig=AOvVaw04BFIFFafa094V2e4-k9Zi&ust=1648904927931000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJid8tj38vYCFQAAAAAdAAAAABAV',
-                        'https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos%2Fimagens-da-natureza&psig=AOvVaw36zrhKoI78hb8snl2R1zM3&ust=1648905142604000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCICvjb748vYCFQAAAAAdAAAAABAD',
+                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6eHzfJjQX05gTuYbjCRh6W1pK9k8o-cn0Ev60HVID7Qkv99Mc33l5EYcCrZp6OB9n0lU&usqp=CAU',
+                        'https://ae01.alicdn.com/kf/HTB16Gy1aSBYBeNjy0Feq6znmFXaZ/Paisagens-Imagens-de-Fundo-Primavera-Paisagem-rvores-sala-casa-arte-decora-o-em-madeira-moldura-de.jpg_Q90.jpg_.webp',
+                        'http://2.bp.blogspot.com/--xMwyqL6wJg/VT5NQrntOYI/AAAAAAABC8g/lkWC7SkgZsg/s1600/130433188.jpg',
                     ]}
-                    size={80}
+                    size={150}
                 />
             </div>
 
