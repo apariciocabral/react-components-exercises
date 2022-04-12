@@ -24,31 +24,23 @@ import Q21Elevated from './components/Q21Elevated';
 import Q22BiggerNumber from './components/Q22BiggerNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
 import Q24RandomNum from './components/Q24RandomNum';
+import Q25IsPrime from './components/Q25IsPrime';
 import Q27Factorial from './components/Q27Factorial';
 import Q28OddEven from './components/Q28OddEven';
-import Q2Uppercase from './components/Q2Uppercase';
-import Q39UppercaseText from './components/Q39UppercaseText';
-import Q3Lowercase from './components/Q3Lowercase';
-import Q44ChangeColorText from './components/Q44ChangeColorText';
-import Q43PlusOneNum from './components/Q43PlusOneNum';
-import Q4StringLength from './components/Q4StringLength';
-import Q5FirstChar from './components/Q5FirstChar';
-import Q6LastChar from './components/Q6LastChar';
-import Q25IsPrime from './components/Q25IsPrime';
-import Q8RepeatString from './components/Q8RepeatString';
-import Q9StringComma from './components/Q9StringComma';
-import Q7BothString from './components/Q7BothString';
+import Q30ZeroToHundred from './components/Q30ZeroToHundred';
 import Q31FiveStar from './components/Q31FiveStar';
 import Q32Rectangles from './components/Q32Rectangles';
 import Q33Circles from './components/Q33Circles';
 import Q36Button from './components/Q36Button';
 import Q37ReceiveText from './components/Q37ReceiveText';
 import Q38SumInput from './components/Q38SumInput';
+import Q39UppercaseText from './components/Q39UppercaseText';
 import Q40LowercaseText from './components/Q40LowercaseText';
 import Q42AddOneLine from './components/Q42AddOneLine';
-import Q30ZeroToHundred from './components/Q30ZeroToHundred';
-import Q48Advice from './components/Q48Advice';
+import Q44ChangeColorText from './components/Q44ChangeColorText';
+import Q43PlusOneNum from './components/Q43PlusOneNum';
 import Q46SearchCep from './components/Q46SearchCep';
+import Q48Advice from './components/Q48Advice';
 
 const App: React.FC = () => {
     return (
